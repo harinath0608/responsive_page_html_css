@@ -1,34 +1,38 @@
-/* selector {
-
-property : value 
-
-} */
-
-.title {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-variant:small-caps ;
-    /* color: rgb(247, 247, 247); */
-}
 
 .container {
-    /* width: 300px ; */
-    text-align: center;
-    /* background-color: rgb(133, 82, 82); */
-    background-image: url("../assets/bg.jpeg");
-    background-size: cover;
-    height: 100vh ;
+    display: flex;
+    flex-direction: row ;
+    gap: 20px ;
+    justify-content:space-around ; 
+    background-color: coral;
 }
 
-p {
-    color: rgb(5, 20, 15);
+li {
+    list-style: none ;
+}
+
+.list-items {
+    gap: 20px ;
+    display: flex;
+    flex-direction: row ;
+    align-items:center ;
+}
+
+h3 {
+    position: sticky;
+}
+
+.alignment {
+    position: sticky;
+    background-color: blueviolet;
 }
 
 
-#para {
-    color: brown;
-}
 
-.anchortag {
-    text-decoration:line-through; 
-}
+
+
+
+
+
+
+

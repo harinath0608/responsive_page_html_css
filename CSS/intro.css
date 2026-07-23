@@ -1,59 +1,62 @@
-
 .container {
-    display: flex;
-    flex-direction: row ;
-    gap: 20px ;
-    justify-content:space-around ; 
-    background-color: coral;
+    text-align: center;
+    background-color: blue;
+}
+
+
+@media (max-width: 480px) {
+
+    .container {
+        background-color: brown;
+        display: flex;
+        flex-direction: row;
+        gap: 20px ;
+        justify-content: space-around;
+    }
 
 }
 
-li {
-    list-style: none ;
-}
 
-.list-items {
-    gap: 20px ;
-    display: flex;
-    flex-direction: row ;
-    align-items:center ;
-}
+@media (min-width: 481px ) and (max-width: 768px) {
 
-h3 {
-    position: sticky;
-}
+        .container {
+        background-color: rgb(32, 146, 3);
+        display: flex;
+        flex-direction: row;
+        gap: 20px ;
+        justify-content: space-around;
+    }
 
-.alignment {
-    position: sticky;
-    background-color: blueviolet;
-}
-
-.image {
-
-    width: 1100px ;
-    position: relative;
+    .card {
+        width: 15% ;
+        background-color: aliceblue;
+        border-radius: 20px ;
+    }
 
 }
 
-.sub-title {
-    position: absolute;
-    top: 220px  ;
-    left: 290px ;
+
+@media (min-width: 769px ) and (max-width: 1024px) {
+
+        .container {
+        background-color: rgb(209, 64, 6);
+        display: flex;
+        flex-direction: row;
+        gap: 20px ;
+        justify-content: space-around;
+    }
+
 }
 
-p {
-    position: absolute;
-    top: 260px  ;
+
+.box {
+ width: 100px;
+ height: 100px;
+ background-color: blue;
+ animation:scale 0.5s ease infinite alternate;
 }
 
-/* object-fit: cover  */
-/* display: block */
-
-
-
-
-
-
-
-
-
+@keyframes scale {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.5);}
+}
